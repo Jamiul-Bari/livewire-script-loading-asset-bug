@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "0bdc024cc866b55349d671651f04634f",
     "packages": [
         {
             "name": "brick/math",
@@ -1817,6 +1817,82 @@
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v3.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/b158c6386a892efc6c5e4682e682829baac1f933",
+                "reference": "b158c6386a892efc6c5e4682e682829baac1f933",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/routing": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0",
+                "laravel/prompts": "^0.1.6",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
+                "phpunit/phpunit": "^10.4",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.5.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-15T18:27:32+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "3.7.0",
             "source": {
@@ -3107,6 +3183,144 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-20T07:29:11+00:00"
+        },
+        {
+            "name": "spatie/livewire-filepond",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/livewire-filepond.git",
+                "reference": "eeaf28f07b7585c1b9947f01141a3251f257eefc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/livewire-filepond/zipball/eeaf28f07b7585c1b9947f01141a3251f257eefc",
+                "reference": "eeaf28f07b7585c1b9947f01141a3251f257eefc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0||^11.0",
+                "livewire/livewire": "^3.5",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-arch": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\LivewireFilepond\\LivewireFilepondServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LivewireFilepond\\": "src/",
+                    "Spatie\\LivewireFilepond\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rias Van der Veken",
+                    "email": "rias@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Upload files using Filepond in Livewire components",
+            "homepage": "https://github.com/spatie/livewire-filepond",
+            "keywords": [
+                "laravel",
+                "livewire",
+                "livewire-filepond",
+                "spatie",
+                "uploads"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/livewire-filepond/issues",
+                "source": "https://github.com/spatie/livewire-filepond/tree/1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-19T08:20:26+00:00"
         },
         {
             "name": "symfony/clock",
